@@ -1,0 +1,31 @@
+{
+  "name": "coding-interview-bootcamp-js",
+  "version": "1.0.0",
+  "description": "A list of coding challenges based on the Udemy Course: The Coding Interview Bootcamp: Algorithms + Data Structures ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts ./mocha.opts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/architMahto/coding-interview-bootcamp-js.git"
+  },
+  "keywords": [
+    "coding_interview",
+    "js",
+    "algorithms",
+    "data_structures"
+  ],
+  "author": "Archit Mahto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/architMahto/coding-interview-bootcamp-js/issues"
+  },
+  "homepage": "https://github.com/architMahto/coding-interview-bootcamp-js#readme",
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^5.6.0",
+    "mocha": "^5.2.0"
+  }
+}
