@@ -1,5 +1,5 @@
---require babel-register
---reporter spec
+--require src/mocha-test-setup
+--reporter dot
 --ui bdd
 --recursive
 ./**/*.test.js
