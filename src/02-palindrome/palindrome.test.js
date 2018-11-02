@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { isPalindrome } from './palindrome';
 
-describe('Testing the isPalindrome function', function () {
+describe.only('Testing the isPalindrome function', function () {
 	it('should exist', function () {
 		expect(isPalindrome).to.not.be.undefined;
 	});

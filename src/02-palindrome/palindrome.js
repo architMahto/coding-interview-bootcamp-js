@@ -5,5 +5,7 @@
  * @returns {boolean} true if string is a palindrome, false otherwise
  */
 export function isPalindrome(str) {
-	return false;
+	let reversedStr = str.split('').reverse().join('');
+
+	return reversedStr === str;
 }
