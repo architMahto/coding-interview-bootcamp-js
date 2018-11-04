@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { anagrams } from './anagrams';
 
-describe('Testing the anagrams function', function () {
+describe.only('Testing the anagrams function', function () {
 	it('should exist', function () {
 		expect(anagrams).to.not.be.undefined;
 	});
