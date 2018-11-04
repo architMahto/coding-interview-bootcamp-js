@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { maxChar } from './max-chars';
 
-describe('Testing the maxChar function', function () {
+describe.only('Testing the maxChar function', function () {
 	it('should exist', function () {
 		expect(maxChar).to.not.be.undefined;
 	});
