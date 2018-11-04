@@ -17,14 +17,30 @@ export function iterativeSteps(num) {
 
 		console.log(step);
 	}
-
 }
 
 /**
  * Prints out a step shape with 'num' levels using the # character recursively
  *
  * @param num
+ * @param row
+ * @param step
  */
-export function recursiveSteps(num) {
-	console.log('');
+export function recursiveSteps(num, row = 0, step = '') {
+	if (row === num) {
+		return;
+	}
+
+	if (num === step.length) {
+		console.log(step);
+		return recursiveSteps(num, row + 1);
+	}
+
+	if (step.length <= row) {
+		step += '#';
+	} else  {
+		step += ' ';
+	}
+
+	recursiveSteps(num, row, step);
 }
