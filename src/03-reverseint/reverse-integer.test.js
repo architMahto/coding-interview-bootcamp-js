@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { reverseInteger } from './reverse-integer';
 
-describe('Testing the reverseInteger function', function () {
+describe.only('Testing the reverseInteger function', function () {
 	it('should exist', function () {
 		expect(reverseInteger).to.not.be.undefined;
 	});
@@ -22,8 +22,8 @@ describe('Testing the reverseInteger function', function () {
 		expect(reverseInteger(90)).to.equal(9);
 	});
 
-	it('should return 9532 for \'2539\'', function () {
-		expect(reverseInteger(2539)).to.equal(9532);
+	it('should return 9352 for \'2539\'', function () {
+		expect(reverseInteger(2539)).to.equal(9352);
 	});
 
 	it('should return -5 for \'-5\'', function () {
