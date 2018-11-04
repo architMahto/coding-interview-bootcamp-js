@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { capitalize } from './capitalize';
 
-describe('Testing the capitalize function', function () {
+describe.only('Testing the capitalize function', function () {
 	it('should exist', () => {
 		expect(capitalize).to.not.be.undefined;
 	});

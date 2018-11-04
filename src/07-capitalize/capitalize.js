@@ -5,5 +5,12 @@
  * @returns {string} Capitalized string
  */
 export function capitalize(str) {
-	return str;
+	const words = str.split(' ');
+	const newStr = words.map(word => getCapitalizedWord(word));
+
+	return newStr.join(' ');
+}
+
+function getCapitalizedWord(word) {
+	return word[0].toUpperCase() + word.slice(1);
 }
