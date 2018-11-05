@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { fib } from './fib';
 
-describe('Testing the fib function', function () {
+describe.only('Testing the fib function', function () {
 	it('should exist', function () {
 		expect(fib).to.not.be.undefined;
 	});
@@ -22,7 +22,7 @@ describe('Testing the fib function', function () {
 		expect(fib(4)).to.equal(3);
 	});
 
-	it('should calculate the correct fib value for 15', function () {
-		expect(fib(15)).to.equal(63245986);
+	it('should calculate the correct fib value for 39', function () {
+		expect(fib(39)).to.equal(63245986);
 	});
 });
