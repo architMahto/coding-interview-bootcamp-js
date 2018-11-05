@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { vowels } from './vowels';
 
-describe('Testing the vowels function', function () {
+describe.only('Testing the vowels function', function () {
 	it('should exist', function () {
 		expect(vowels).to.not.be.undefined;
 	});

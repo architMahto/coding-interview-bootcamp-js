@@ -5,5 +5,7 @@
  * @returns {number} The number of vowels in a string
  */
 export function vowels(str) {
-	return 0;
+	const vowels = str.match(/[aeiou]/gi);
+
+	return vowels ? vowels.length : 0;
 }
